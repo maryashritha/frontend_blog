@@ -1,0 +1,34 @@
+#form-area1{
+    background-image: url("/assets/images/bg-form.jpg");
+    background-size: cover;
+  
+  }
+  
+  
+  #form-area2{
+    background-color: rgb(24, 51, 68);
+    font-size: 18px;
+    color:white;
+    padding:50px;
+    font-weight: bold;
+  }
+  #logo{
+    align-items: center;
+    text-align: center;
+  }
+  
+  .error{
+    color: rgb(233, 94, 94);
+    font-size: 14px;
+    
+  }
+  
+a{
+    text-decoration: none;
+    color: white;
+
+  }
+.change-a{
+   text-decoration-color: white;
+    color: rgb(136, 214, 240);
+}

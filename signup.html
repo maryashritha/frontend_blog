@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="/css/signup.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+    <div class="row" >
+      <div class="col-md-7" id="form-area1">
+      </div>
+      <div class="col-md-5" id="form-area2">
+       <p style="text-align:center; font-weight: bolder;font-size: x-large; color:rgb(173, 203, 206)"><img src="/assets/images/logo_fet.jpg" alt="logo">
+        <br> Sign Up
+      </p>
+       <form action="index.html" >
+       
+        <label for="full-name">Full Name </label><br><input id="fullname"  type="text" placeholder="Name" onblur="validateName()">
+         <br> <span  class="error" id="fullname-error"></span>
+        <hr>
+        <label for="email">Email </label><br><input type="Email"  id="email"  placeholder="Email address" onblur="validateEmail()">
+          <br><span  class="error" id="email-error"></span>
+        <hr>
+        <label for="username">Username</label> <br><input type="text" id="username"  placeholder="username" onblur="validateUsername() ">
+          <br><span  class="error" id="username-error"></span>
+        <hr>
+        <label for="password">Password </label><br><input id="password" type="password" title="Password must be 8-12 characterslong, and contain atleast one upper and lower case letter, number and symbol" placeholder="" onblur="validatePassword()">
+          <br><span  class="error" id="password-error"></span>
+        <hr>
+        <label for="confirm-password">Confirm Password </label><br><input id="confirm" type="password" placeholder="" onblur="confirmPassword()">
+          <br><span  class="error" id="confirm-error"></span>
+        <hr>
+        <input type="checkbox" id="checkbox-signup"><label for="checkbox"> &nbsp;Remember me</label>
+        <br>
+        <span  class="error" id="submit-error"></span>
+        <br>
+        <button type="submit" class="btn btn-primary" onclick="return validateSubmit()">Sign up</button>
+            &nbsp; &nbsp; <span style="font-weight:normal;">Already have an account?&nbsp; &nbsp;</span>
+            <a class="change-a" href="login.html">Login</a>
+       </form>
+        
+      
+
+      </div>
+      
+    </div>
+  
+
+
+  <script src="/js/signup.js"></script>
+  <script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>

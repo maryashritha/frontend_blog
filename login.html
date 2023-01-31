@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up</title>
+  <link rel="stylesheet" href="/css/signup.css">
+  <link rel="stylesheet" href="/css/login.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+</head>
+<body>
+  <div class="row" >
+    <div class="col-md-7" id="form-area1">
+    </div>
+    <div class="col-md-5" id="form-area2">
+        <br>
+        <p style="text-align:center; font-weight: bolder;font-size: x-large; color:rgb(173, 203, 206)"><img src="/assets/images/logo_fet.jpg"  alt="logo">
+          <br> Login
+        </p>
+       <br>
+      <form action="index.html">
+      
+        <hr>
+        <label for="username">Username</label> <br><br><input type="text" id="username"  placeholder="username" onblur="validateName() ">
+        <br> <span  class="error" id="name-error"></span><br>
+          
+        <hr>
+        <label for="password">Password</label> <br><br><input id="password" type="password" placeholder="" onblur="validatePassword()">
+          <br><span  class="error" id="password-error"></span><br>
+        <hr>
+        <input type="checkbox" id="checkbox-signup"><label for="checkbox"> &nbsp;Remember me</label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class= "change-a" style="font-weight:normal" href="#">Forgot Username/Password?</a>
+        <br><br>
+        <span  class="error" id="submit-error"></span>
+        <br>
+        <button type="submit" class="btn btn-primary" onclick="return validateSubmit()">&nbsp; Login &nbsp;</button>
+        <p><br><span style="font-weight:normal;">Don't have an account?&nbsp;</span> <a class="change-a" href="signup.html">Sign Up</a></p>
+       
+      </form>
+        
+       <br>
+      
+
+    </div>
+  </div>
+  
+
+
+  <script src="/js/login.js"></script>
+  <script src="/js/bootstrap.bundle.js"></script>
+</body>
+</html>
